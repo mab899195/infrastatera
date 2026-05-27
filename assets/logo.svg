@@ -1,0 +1,11 @@
+<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon background -->
+  <polygon points="100,10 178,55 178,145 100,190 22,145 22,55" fill="#FF3008"/>
+
+  <!-- I-beam (top flange) -->
+  <rect x="60" y="62" width="80" height="18" rx="7" fill="white"/>
+  <!-- I-beam (web/middle) -->
+  <rect x="88" y="80" width="24" height="40" rx="5" fill="white"/>
+  <!-- I-beam (bottom flange) -->
+  <rect x="60" y="120" width="80" height="18" rx="7" fill="white"/>
+</svg>
