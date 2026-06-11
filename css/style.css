@@ -171,7 +171,7 @@ img, svg, canvas { display: block; max-width: 100%; }
   justify-content: space-between;
   height: var(--nav-h);
   padding: 0 var(--px);
-  background: rgba(244, 241, 235, 0.78);
+  background: rgba(220, 217, 210, 0.85);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
