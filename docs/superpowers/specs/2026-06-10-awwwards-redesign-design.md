@@ -10,7 +10,7 @@ Redesign the InfraStatera landing page (infrastatera.com) to awwwards-level visu
 ## Decisions (confirmed with user)
 
 - **Content:** Keep existing InfraStatera copy, sections, and `data-i18n` keys / `assets/i18n.js` translations. Do not invent a fictional portfolio.
-- **Direction:** Dark engineering — near-black `#0A0A0C` canvas, massive display type, red `#FF3008` as sole accent, blueprint/grid motifs, structural wireframe imagery.
+- **Direction:** Light blueprint (revised 2026-06-11 after user review of the dark build) — warm paper `#F4F1EB` canvas, dark ink `#16151A` type, red `#FF3008` as sole accent, blueprint/grid motifs, structural wireframe drawn in ink. Layout, motion, and structure are identical to the original dark-engineering design; only the palette changed.
 - **Stack:** GSAP 3 + ScrollTrigger and Three.js, loaded from CDN. Vite stays for local dev only.
 
 ## Architecture

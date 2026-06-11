@@ -10,16 +10,16 @@
 }
 
 :root {
-  --bg:        #0A0A0C;
-  --bg-elev:   #101013;
-  --bg-card:   #121215;
-  --ink:       #F0EEE9;
-  --ink-dim:   rgba(240, 238, 233, 0.62);
-  --ink-faint: rgba(240, 238, 233, 0.38);
+  --bg:        #F4F1EB;
+  --bg-elev:   #ECE8DF;
+  --bg-card:   #FBF9F5;
+  --ink:       #16151A;
+  --ink-dim:   rgba(22, 21, 26, 0.64);
+  --ink-faint: rgba(22, 21, 26, 0.42);
   --red:       #FF3008;
   --red-deep:  #C72404;
-  --line:      rgba(240, 238, 233, 0.10);
-  --line-strong: rgba(240, 238, 233, 0.2);
+  --line:      rgba(22, 21, 26, 0.12);
+  --line-strong: rgba(22, 21, 26, 0.26);
 
   --font-display: 'Nippo', 'Arial Narrow', sans-serif;
   --font-body:    'Supreme', 'Helvetica Neue', sans-serif;
@@ -54,19 +54,19 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(240, 238, 233, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(240, 238, 233, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(60, 75, 100, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 75, 100, 0.055) 1px, transparent 1px);
   background-size: 72px 72px;
 }
 
 ::selection {
   background: var(--red);
-  color: var(--bg);
+  color: #F4F1EB;
 }
 
 ::-webkit-scrollbar { width: 10px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: #2A2A2E; border-radius: 5px; }
+::-webkit-scrollbar-thumb { background: #C9C3B7; border-radius: 5px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--red); }
 
 h1, h2, h3 {
@@ -171,7 +171,7 @@ img, svg, canvas { display: block; max-width: 100%; }
   justify-content: space-between;
   height: var(--nav-h);
   padding: 0 var(--px);
-  background: rgba(10, 10, 12, 0.72);
+  background: rgba(244, 241, 235, 0.78);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
@@ -300,8 +300,8 @@ img, svg, canvas { display: block; max-width: 100%; }
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(240, 238, 233, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(240, 238, 233, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(60, 75, 100, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(60, 75, 100, 0.07) 1px, transparent 1px);
   background-size: 56px 56px;
 }
 
@@ -485,7 +485,7 @@ img, svg, canvas { display: block; max-width: 100%; }
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(10,10,12,0.25) 0%, rgba(10,10,12,0) 35%, rgba(10,10,12,0.82) 100%);
+  background: linear-gradient(180deg, rgba(244,241,235,0.3) 0%, rgba(244,241,235,0) 35%, rgba(244,241,235,0.85) 100%);
 }
 
 .hero-annot {
@@ -644,11 +644,11 @@ img, svg, canvas { display: block; max-width: 100%; }
   position: relative;
   padding: clamp(2rem, 4vw, 3rem);
   background: var(--bg-card);
-  border: 1px solid rgba(255, 48, 8, 0.35);
+  border: 1px solid rgba(255, 48, 8, 0.45);
   box-shadow:
-    0 0 0 1px rgba(255, 48, 8, 0.06),
-    0 0 64px rgba(255, 48, 8, 0.08),
-    inset 0 0 48px rgba(255, 48, 8, 0.04);
+    0 1px 2px rgba(22, 21, 26, 0.05),
+    0 16px 48px rgba(22, 21, 26, 0.08),
+    0 0 0 1px rgba(255, 48, 8, 0.05);
 }
 
 .solution-crosshair {
@@ -724,7 +724,7 @@ img, svg, canvas { display: block; max-width: 100%; }
   font-size: clamp(6rem, 11vw, 9.5rem);
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(240, 238, 233, 0.1);
+  -webkit-text-stroke: 1px rgba(22, 21, 26, 0.16);
   pointer-events: none;
   transition: -webkit-text-stroke-color 0.4s ease, transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }

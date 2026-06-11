@@ -89,7 +89,7 @@ function init() {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x0a0a0c, 6, 14);
+  scene.fog = new THREE.Fog(0xf4f1eb, 6, 14);
 
   const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 50);
   camera.position.set(0, 1.1, 7.2);
@@ -103,14 +103,15 @@ function init() {
 
   const lineGeo = new THREE.BufferGeometry().setFromPoints(linePts);
   const lineMat = new THREE.LineBasicMaterial({
-    color: 0xf0eee9, transparent: true, opacity: 0.22, fog: true,
+    color: 0x16151a, transparent: true, opacity: 0.3, fog: true,
   });
   group.add(new THREE.LineSegments(lineGeo, lineMat));
 
   const nodeGeo = new THREE.BufferGeometry().setFromPoints(nodePts);
+  // normal blending: additive washes out to white on a light background
   const nodeMat = new THREE.PointsMaterial({
     size: 0.09, map: glowTexture(), transparent: true, depthWrite: false,
-    blending: THREE.AdditiveBlending, color: 0xff3008, fog: true,
+    blending: THREE.NormalBlending, color: 0xff3008, fog: true,
   });
   group.add(new THREE.Points(nodeGeo, nodeMat));
 
@@ -125,7 +126,7 @@ function init() {
   const dustGeo = new THREE.BufferGeometry();
   dustGeo.setAttribute('position', new THREE.BufferAttribute(dustPos, 3));
   const dustMat = new THREE.PointsMaterial({
-    size: 0.025, color: 0xf0eee9, transparent: true, opacity: 0.35,
+    size: 0.025, color: 0x16151a, transparent: true, opacity: 0.3,
     depthWrite: false, fog: true,
   });
   const dust = new THREE.Points(dustGeo, dustMat);
