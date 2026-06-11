@@ -1,7 +1,7 @@
 /* InfraStatera — hero scene: parametric box-truss wireframe.
    Degrades to the static SVG fallback if WebGL is unavailable. */
 
-import * as THREE from 'three';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js';
 
 const hero = document.querySelector('.hero');
 const canvas = document.getElementById('hero-canvas');
