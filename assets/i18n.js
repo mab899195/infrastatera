@@ -161,6 +161,7 @@ function setLanguage(lang) {
   document.documentElement.lang = lang;
   document.title = translations[lang]['page-title'];
   localStorage.setItem('lang', lang);
+  document.dispatchEvent(new CustomEvent('langchange', { detail: { lang } }));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
