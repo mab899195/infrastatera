@@ -301,3 +301,58 @@ a { color: var(--blue); }
 @media (max-width: 640px) {
   .footer-inner { padding: 32px 20px 24px; }
 }
+
+/* ---------- Home: link to the full demo page ---------- */
+.demos-more { display: flex; justify-content: center; padding: 32px 16px 0; }
+
+/* Current page in the nav */
+.nav-menu a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+
+/* ---------- Demo page ---------- */
+.page-head { text-align: center; padding: 80px 32px 48px; }
+.page-head .tier { margin-bottom: 8px; }
+.page-head h1 { font-size: clamp(36px, 4.4vw, 48px); line-height: 1.08; letter-spacing: -0.035em; }
+.page-head-lead { margin: 14px auto 0; max-width: 600px; color: var(--ink-2); font-size: 18px; }
+
+.demo-catalog { padding: 0 var(--gutter) 96px; }
+.demo-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr));
+  gap: var(--gutter);
+}
+.demo-card { background: var(--fog); display: flex; flex-direction: column; }
+.demo-card-media {
+  display: flex; justify-content: center; overflow: hidden;
+  padding: 40px 32px 0; background: #ECECEC;
+}
+.device-stage--card { margin-top: 0; max-width: 560px; }
+.device-stage--no-phone { padding-right: 0; }
+.demo-card-media:hover .device-browser { box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18); }
+.demo-card-body { padding: 32px 32px 40px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1; }
+.demo-card-body h2 { font-size: 28px; line-height: 1.15; }
+.demo-card-text { color: var(--ink-2); max-width: 560px; }
+.tags { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  font-size: 12px; color: var(--ink-2); background: var(--white);
+  border: 1px solid #E0E0E0; border-radius: var(--pill); padding: 3px 12px;
+}
+.demo-card .demo-actions { justify-content: flex-start; margin-top: auto; padding-top: 16px; }
+
+.demo-next {
+  margin-top: var(--gutter); background: var(--soft); padding: 32px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 20px 24px;
+}
+.demo-next > div { flex: 1 1 320px; }
+.demo-next h2 { font-size: 20px; margin-bottom: 4px; }
+.demo-next p { color: var(--ink-2); font-size: 15px; }
+
+.demo-noscript { padding: 0 16px; line-height: 2; }
+
+@media (max-width: 640px) {
+  .page-head { padding: 56px 20px 36px; }
+  .page-head-lead { font-size: 16px; }
+  .demo-catalog { padding-bottom: 72px; }
+  .demo-card-media { padding: 28px 20px 0; }
+  .demo-card-body { padding: 24px 20px 32px; }
+  .demo-card-body h2 { font-size: 24px; }
+  .demo-next { padding: 24px 20px; }
+}
