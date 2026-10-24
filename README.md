@@ -1,43 +1,26 @@
-# InfraStatera — Site web
+# InfraStatera — website
 
-## Structure du projet
+Static one-page site for [infrastatera.com](https://infrastatera.com), served by GitHub Pages from the `main` branch (custom domain set in `CNAME`).
+
+## Structure
 
 ```
-infrastatera/
-├── index.html        ← Page principale
-├── css/
-│   └── style.css     ← Styles (variables CSS, responsive, dark mode)
-└── README.md
+index.html          Single page: hero, live demos, services, process, why us, contact
+css/style.css       All styles (Open Sans, showroom layout, responsive)
+js/main.js          Mobile menu, dismissible announcement bar, footer year
+assets/logo.svg     Brand mark (hexagon + I-beam)
+assets/favicon.svg
+assets/img/         Hero photo and demo screenshots
 ```
 
-## Lancer en local
-
-Ouvrir `index.html` directement dans un navigateur, ou lancer un serveur local :
+No build step is needed. To preview locally:
 
 ```bash
-npx serve .
-# ou
-python3 -m http.server 8080
+npx vite        # or: python3 -m http.server 3000
 ```
 
-## Palette de couleurs
+## Editing
 
-| Variable         | Valeur    | Usage                    |
-|------------------|-----------|--------------------------|
-| `--green`        | `#1D9E75` | Couleur principale       |
-| `--green-mid`    | `#0F6E56` | Badges, accents          |
-| `--green-bg`     | `#E1F5EE` | Fond des badges          |
-| `--text-primary` | `#1a1a18` | Titres, corps            |
-| `--text-secondary`| `#5f5e5a`| Descriptions             |
-
-## Icônes
-
-Utilise [Tabler Icons](https://tabler.io/icons) via CDN (outline uniquement).  
-Exemple : `<i class="ti ti-device-analytics"></i>`
-
-## Pour aller plus loin
-
-- Ajouter une section **À propos** avec le parcours et les références
-- Ajouter une section **Études de cas** ou **Références clients**
-- Intégrer un **formulaire de contact** (Formspree, Netlify Forms…)
-- Déployer sur **Netlify**, **Vercel**, ou **GitHub Pages** (drag & drop du dossier)
+- **Demo links** live in `index.html` (search for `vercel.app` and `defect-capture-demo`).
+- **Colors** are CSS variables at the top of `css/style.css`: `--blue` for buttons and links, `--brand` / `--tier` for the logo red-orange and small labels.
+- **Hero photo**: `assets/img/hero-interchange.jpg` — "Aerial Night View of City Highway Interchange" by Raj Manohar on Pexels (free to use).
