@@ -27,7 +27,7 @@
 
   // Dismissible announcement (remembered per browser)
   var bar = document.getElementById('announce');
-  var KEY = 'infrastatera-announce-submittal-generator';
+  var KEY = 'infrastatera-announce-defect-capture';
   if (bar) {
     try {
       if (localStorage.getItem(KEY) === 'dismissed') bar.hidden = true;

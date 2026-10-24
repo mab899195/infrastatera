@@ -18,7 +18,7 @@ window.INFRASTATERA_DEMOS = [
     title: 'Submittal Generator',
     description: 'Fill a short form and download a formatted submittal cover sheet as Word or PDF. Numbering and revisions (004-R1) are handled for you, with a live preview as you type.',
     tags: ['Submittals', 'Caltrans', 'Word & PDF', 'Revisions'],
-    url: 'https://submittal-generator-gamma.vercel.app/',
+    url: 'https://submittal-generator-demo.vercel.app/',
     desktop: { src: 'assets/img/submittal-office.jpg', alt: 'Submittal Generator: form on the left with submittal number 001 and a live preview of the formatted cover sheet on the right' },
     phone: { src: 'assets/img/submittal-phone.jpg', alt: 'Submittal Generator on a phone: the form above a live preview of the submittal cover sheet' }
   },
