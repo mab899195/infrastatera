@@ -15,6 +15,15 @@
 window.INFRASTATERA_DEMOS = [
   {
     status: 'New demo',
+    title: 'Caltrans Bid Finder',
+    description: 'Every advertised Caltrans project in your districts, filtered by estimate and scanned for electrical bid items. Track each bid from new to bidding and get email alerts when a match is posted.',
+    tags: ['Bidding', 'Caltrans', 'Electrical', 'Email alerts'],
+    url: 'https://caltrans-bid-finder-demo.vercel.app/',
+    desktop: { src: 'assets/img/bid-finder-office.jpg', alt: 'Caltrans Bid Finder: filters for district and estimate above a table of advertised projects with bid dates and electrical items found' },
+    phone: { src: 'assets/img/bid-finder-phone.jpg', alt: 'Caltrans Bid Finder on a phone: district and estimate filters, email alert settings and the project list' }
+  },
+  {
+    status: 'Live demo',
     title: 'Submittal Generator',
     description: 'Fill a short form and download a formatted submittal cover sheet as Word or PDF. Numbering and revisions (004-R1) are handled for you, with a live preview as you type.',
     tags: ['Submittals', 'Caltrans', 'Word & PDF', 'Revisions'],
