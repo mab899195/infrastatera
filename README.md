@@ -34,3 +34,9 @@ The homepage shows two featured demos as large tiles (hand-written in `index.htm
 - **Featured demo links** on the homepage live in `index.html` (search for `vercel.app` and `defect-capture-demo`); the full list lives in `js/demos.js`.
 - **Colors** are CSS variables at the top of `css/style.css`: `--blue` for buttons and links, `--brand` / `--tier` for the logo red-orange and small labels.
 - **Hero photo**: `assets/img/hero-interchange.jpg` — "Aerial Night View of City Highway Interchange" by Raj Manohar on Pexels (free to use).
+
+## SEO
+
+- `sitemap.xml` lists every page. When you add a new page, add a `<url>` entry and update `<lastmod>`.
+- `robots.txt` points search engines to the sitemap and hides `/docs/`.
+- Structured data (Organization + WebSite) is in the `<head>` of `index.html`. Add the LinkedIn company page URL to a `"sameAs"` list there once it exists.

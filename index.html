@@ -10,6 +10,7 @@
   <link rel="canonical" href="https://infrastatera.com/">
 
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="InfraStatera">
   <meta property="og:title" content="InfraStatera — Engineered for balance">
   <meta property="og:description" content="Field software, structural monitoring and AI that construction and infrastructure teams actually use.">
   <meta property="og:url" content="https://infrastatera.com/">
@@ -24,12 +25,37 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "InfraStatera",
-    "url": "https://infrastatera.com/",
-    "logo": "https://infrastatera.com/assets/logo.svg",
-    "email": "infrastatera@gmail.com",
-    "description": "Technology consulting and field software for construction and infrastructure."
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://infrastatera.com/#organization",
+        "name": "InfraStatera",
+        "alternateName": ["Infra Statera", "InfraStatera Consulting"],
+        "url": "https://infrastatera.com/",
+        "logo": "https://infrastatera.com/assets/logo.svg",
+        "image": "https://infrastatera.com/assets/img/hero-interchange.jpg",
+        "email": "infrastatera@gmail.com",
+        "description": "InfraStatera is a technology consulting firm for construction and infrastructure: custom field apps, structural monitoring and AI for contractors and engineers.",
+        "slogan": "Engineered for balance.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Los Angeles",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        },
+        "areaServed": "US",
+        "knowsAbout": ["Construction technology", "Field management software", "Structural health monitoring", "Infrastructure inspection", "BIM", "Caltrans contractors"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://infrastatera.com/#website",
+        "name": "InfraStatera",
+        "alternateName": "Infra Statera",
+        "url": "https://infrastatera.com/",
+        "publisher": { "@id": "https://infrastatera.com/#organization" },
+        "inLanguage": "en"
+      }
+    ]
   }
   </script>
 </head>
@@ -63,7 +89,7 @@
     <section class="hero" id="top">
       <img class="hero-img" src="assets/img/hero-interchange.jpg" alt="" width="1520" height="1140" fetchpriority="high">
       <div class="hero-content">
-        <p class="hero-eyebrow">Construction &amp; infrastructure technology</p>
+        <p class="hero-eyebrow">InfraStatera · Construction &amp; infrastructure technology</p>
         <h1>Engineered for balance.</h1>
         <p class="hero-lead">Field software, structural monitoring and AI that construction and infrastructure teams actually use.</p>
         <div class="hero-actions">
